@@ -20,7 +20,7 @@
     </platform>
     <platform name="android">
         <preference name="FIREBASE_ANALYTICS_VERSION" default="17.0.+"/>
-        <framework src="com.google.firebase:com.google.firebase:firebase-analytics:$FIREBASE_ANALYTICS_VERSION" />
+        <framework src="com.google.firebase:firebase-analytics:$FIREBASE_ANALYTICS_VERSION" />
         <preference name="FIREBASE_INAPPMESSAGING_VERSION" default="18.0.+"/>
         <framework src="com.google.firebase:firebase-inappmessaging-display:$FIREBASE_INAPPMESSAGING_VERSION" />
     </platform>
