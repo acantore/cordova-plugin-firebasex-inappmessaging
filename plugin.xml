@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-firebasex-inappmessaging" version="0.0.1" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>FirebaseXInAppMessaging</name>
+    <js-module name="FirebaseXInAppMessaging" src="www/FirebaseXInAppMessaging.js">
+        <clobbers target="cordova.plugins.FirebaseXInAppMessaging" />
+    </js-module>
+    <platform name="ios">
+        <podspec>
+			<config>
+				<source url="https://github.com/CocoaPods/Specs.git"/>
+			</config>
+			<pods use-frameworks="true">
+				<pod name="Firebase/InAppMessagingDisplay"  spec="~> 6.3.0"/>
+				<pod name="Firebase/Analytics"  spec="~> 6.3.0"/>
+			</pods>
+		</podspec>
+
+    </platform>
+    <platform name="android">
+        <preference name="FIREBASE_ANALYTICS_VERSION" default="17.0.+"/>
+        <framework src="com.google.firebase:com.google.firebase:firebase-analytics:$FIREBASE_ANALYTICS_VERSION" />
+        <preference name="FIREBASE_INAPPMESSAGING_VERSION" default="18.0.+"/>
+        <framework src="com.google.firebase:firebase-inappmessaging-display:$FIREBASE_INAPPMESSAGING_VERSION" />
+    </platform>
+</plugin>

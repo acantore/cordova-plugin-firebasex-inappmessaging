@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-firebasex-inappmessaging",
+  "version": "0.0.1",
+  "description": "Add In App Messaging dependencies",
+  "cordova": {
+    "id": "cordova-plugin-firebasex-inappmessaging",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acantore/cordova-plugin-firebasex-inappmessaging.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Andrea Cantore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acantore/cordova-plugin-firebasex-inappmessaging/issues"
+  },
+  "homepage": "https://github.com/acantore/cordova-plugin-firebasex-inappmessaging#readme"
+}
